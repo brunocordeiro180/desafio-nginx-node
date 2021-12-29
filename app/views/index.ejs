@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Node com Nginx</title>
+  </head>
+  <body>
+    <div>
+      <h1>Full Cycle Rocks!</h1>
+    </div>
+    <div>
+      <h2>Lista de pessoas inseridas no banco</h2>
+      <ul>
+        <% for (let i = 0; i < people.length; i++) { %>
+        <li><%= people[i].name %></li>
+        <% } %>
+      </ul>
+    </div>
+  </body>
+</html>
