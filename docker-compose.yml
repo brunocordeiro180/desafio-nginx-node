@@ -12,7 +12,6 @@ services:
       - desafio-node-network
     depends_on:
       - db
-      - nginx
   db:
     image: mysql:5.7
     command: --innodb-use-native-aio=0
@@ -39,6 +38,8 @@ services:
       - desafio-node-network
     ports: 
       - "8080:80"
+    depends_on:
+      - app
 
 networks:
   desafio-node-network:
